@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fastapi-app
+  template:
+    metadata:
+      labels:
+        app: fastapi-app
+    spec:
+      containers:
+        - name: fastapi-container
+          # IMPORTANTE: A linha abaixo será ATUALIZADA AUTOMATICAMENTE pelo CI.
+          # Coloque uma tag inicial, pode ser 'latest' ou qualquer outra.
+          image: SEU_USUARIO_DOCKERHUB/fastapi-app:initial
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
