@@ -14,9 +14,8 @@ spec:
     spec:
       containers:
         - name: fastapi-container
-          # IMPORTANTE: A linha abaixo será ATUALIZADA AUTOMATICAMENTE pelo CI.
-          # Coloque uma tag inicial, pode ser 'latest' ou qualquer outra.
-          image: SEU_USUARIO_DOCKERHUB/fastapi-app:initial
+          
+          image: gianpedro/fastapi-app:initial
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
