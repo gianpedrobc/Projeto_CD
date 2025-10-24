@@ -27,8 +27,8 @@ A ferramenta de **Entrega Contínua (ArgoCD)** é responsável por ler este repo
 ## 📁 Estrutura de Arquivos
 
 /k8s
-├─ deployment.yaml # Define como a aplicação deve ser executada (réplicas, imagem Docker, etc.)
-├─ service.yaml # Define como a aplicação é exposta (NodePort, LoadBalancer, etc.)
+ ├─ deployment.yaml # Define como a aplicação deve ser executada (réplicas, imagem Docker, etc.)
+ ├─ service.yaml # Define como a aplicação é exposta (NodePort, LoadBalancer, etc.)
 
 
 - **deployment.yaml**: A `image: tag` neste arquivo é atualizada automaticamente pelo CI.  
@@ -50,5 +50,7 @@ A ferramenta de **Entrega Contínua (ArgoCD)** é responsável por ler este repo
 ## 🔗 Repositórios Relacionados
 
 - **Repositório da Aplicação (CI)**: [https://github.com/gianpedrobc/Projeto_CI](https://github.com/gianpedrobc/Projeto_CI)
+
+- **Repositório do DockerHub**: [https://hub.docker.com/repository/docker/gianpedro/fastapi-app/general](https://hub.docker.com/repository/docker/gianpedro/fastapi-app/general)
 
 
