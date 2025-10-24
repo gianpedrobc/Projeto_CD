@@ -15,7 +15,7 @@ spec:
       containers:
         - name: fastapi-container
           
-          image: gianpedro/fastapi-app:cee0dbcbe6f0bfed92680dcc5f56b69a899e51bb
+          image: gianpedro/fastapi-app:aac002a7d52166b2ed43344449ebf82de1757279
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
